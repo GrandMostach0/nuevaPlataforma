@@ -1,7 +1,7 @@
+import { useState } from "react";
 import NavBar from "../components/Layouts/NavBar";
 import FooterBar from "../components/Layouts/FooterBar";
 import CardInformacion from "../components/ui/inscripcion/cardInformacion";
-import { useState } from "react";
 
 import FormularioInscripcion from "../components/ui/inscripcion/FormularioInscripcion"
 import Requisito from "../components/ui/inscripcion/Requisitos";
@@ -15,7 +15,7 @@ function InformacionInscripcion() {
     const renderSecction = () => {
         switch(opcion) {
             case "Formulario":
-                return <div><FormularioInscripcion /></div>
+                return <FormularioInscripcion />
             
             case "Requisitos":
                 return <Requisito />

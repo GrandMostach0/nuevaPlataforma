@@ -5,6 +5,8 @@ import CardFutbolEncuentro from "../components/ui/CardFutbolEncuentro";
 import TablaPosiciones from "../components/ui/TablaPosiciones";
 import FooterBar from "../components/Layouts/FooterBar";
 
+import HomeLayout from "../components/Layouts/HomeLayout";
+
 function Home(){
     
     const listaOpciones = ["Proximos", "Resultados"];
@@ -21,8 +23,8 @@ function Home(){
                 <p className="text-lg">Toda la emoción del fútbol en un solo lugar. Sigue a tu equipo favorito en todas las categorías.</p>
 
                 <div>
-                    <button className="cursor-pointer m-2 px-8 py-2 rounded-xl bg-black text-white">Ver Partidos</button>
-                    <button className="cursor-pointer m-2 px-8 py-2 rounded-xl border border-b-gray-600">Clasificación</button>
+                    <button className="btn-base bg-black text-white">Ver Partidos</button>
+                    <button className="btn-base border border-slate-400">Clasificación</button>
                 </div>
             </section>
 
