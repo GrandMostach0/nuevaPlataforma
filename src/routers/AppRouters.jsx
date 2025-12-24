@@ -15,6 +15,8 @@ import VentanaDos from "../VentanaDos";
 import NotFound from "../Pages/NotFound";
 import InformacionInscripcion from "../Pages/InformacionInscripcion";
 
+import AdminRouters from "./adminRouters";
+
 export default function AppRouters(){
     return (
         <BrowserRouter >
@@ -28,6 +30,8 @@ export default function AppRouters(){
                 
                 <Route path="/inscripcion" element={<InformacionInscripcion />} />
                 <Route path="/dos" element={<VentanaDos />} />
+                <Route path="/admin/*" element={<AdminRouters />} />
+                
 
                 {/* Error 404 */}
                 <Route path="*" element={<NotFound />} />
