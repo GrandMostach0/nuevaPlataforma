@@ -16,6 +16,15 @@ export default function SliderBar() {
             path: '/dashboard'
         },
         {
+            id: 90,
+            label: 'Configuración',
+            subItems: [
+                { id: 91, label: 'configuración general', path: '/admin/configuracion' },
+                { id: 92, label: 'Apariencia', path: '/admin/apariencia' },
+                { id: 93, label: 'Sistema', path: '/admin/sistema' }
+            ]
+        },
+        {
             id: 2,
             label: 'Equipos',
             subItems: [
